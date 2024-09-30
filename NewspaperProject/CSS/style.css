@@ -1,0 +1,311 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr; /*single column layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3:1 ration between content and sidebar */
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advertisement {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Spaces between photos */
+    padding: 20px;
+}
+
+.photo img {
+    width: 100%; /* Ensure images are fully responsive within their containers */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Hamburger Menu Styles */
+.menu-container {
+    position: relative;
+    text-align: right;
+    padding: 10px;
+}
+
+.hamburger-icon {
+    font-size: 2em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Hide regular navigation items on smaller screens */
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* Initially hidden */
+    }
+
+    /* When clicking the hamburger menu, use js to toggle this class to display the items */
+    nav ul.active {
+        display: block; /* Display when active */
+    }
+}
+
+/* Gallery Styles */
+.photo-gallery {
+    display: flex; /* Use flexbox to arrange photos */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Margin around the gallery */
+}
+
+.gallery-controls {
+    margin-bottom: 20px; /* Space below the controls */
+}
+
+.photo {
+    display: none; /* Hide all photos initially */
+    max-width: 100%; /* Allow the image to be responsive */
+    margin: 10px 0; /* Space between images */
+    border: 2px solid #cccccc; /* Border around each photo */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow from border radius */
+}
+
+.photo img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.photo.active {
+    display: block; /* Show the currently active photo */
+}
+
+.article-header {
+    background-color: #f9f9f9; /* Light background for the header */
+    padding: 20px; /* Space inside the header */
+    border: 2px solid #ccc; /* Light gray border */
+    margin-bottom: 20px; /* Space below the header */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.article-content {
+    padding: 20px; /* Space inside the content area */
+    border: 1px solid #ddd; /* Slightly darker border */
+    margin: 20px; /* Margin to separate from other elements */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background for contrast */
+}
+
+.sidebar {
+    padding: 10px; /* Padding inside the sidebar */
+    border: 1px solid #bbb; /* Border around the sidebar */
+    margin-top: 20px; /* Space above the sidebar */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.photo-gallery {
+    display: flex; /* Flexbox layout for gallery */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content */
+    padding: 20px; /* Padding around the gallery */
+}
+
+.photo {
+    display: none; /* Hide photos by default */
+    padding: 10px; /* Padding around each photo */
+    border: 2px solid #ddd; /* Border around each photo */
+    margin: 10px; /* Space between photos */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Background for each photo */
+}
+
+.photo.active {
+    display: block; /* Show active photo */
+}
+
+body {
+    background-color: #f5f5dc; /* A creamy color */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+.article-content {
+    width: 80%; /* or 90% based on your design */
+    max-width: 800px; /* Prevents it from getting too wide */
+    margin: 0 auto; /* Center it */
+    padding: 20px; /* Adds space inside the section */
+    text-align: left; 
+}
+
+/* Main content styling */
+main {
+    width: 80%; /* Adjust to desired width */
+    max-width: 800px; /* Prevents it from getting too wide */
+    margin: 0 auto; /* Center the main content */
+    padding: 20px; /* Adds space inside the main area */
+    text-align: left; 
+}
+
+/* Section styling for featured articles and latest news */
+section {
+    background-color: #ffffff; /* White background */
+    border: 2px solid #cccccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 20px; /* Space inside the border */
+    margin-bottom: 20px; /* Space between sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading styles */
+h2 {
+    margin-bottom: 15px; /* Space below headings */
+    font-size: 1.8em; /* Heading size */
+    color: #333; /* Dark gray for headings */
+}
+
+/* Article headings */
+article h3 {
+    margin-top: 15px; /* Space above article headings */
+    margin-bottom: 10px; /* Space below article headings */
+    font-size: 1.5em; /* Size for article headings */
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Darker gray for better contrast */
+}
+
+/* Image styling in articles */
+article img {
+    width: 100%; /* Full width of the parent element */
+    height: auto; /* Maintain aspect ratio */
+    margin: 15px 0; /* Space above and below images */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Specific styling for Latest News section */
+.latest-news {
+    margin-left: 20px; /* Adjust the left margin to move it to the right */
+    padding: 20px; /* Maintain padding for consistency */
+    background-color: #ffffff; /* Ensure it has a white background */
+    border: 2px solid #cccccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Additional styles if needed */
+.latest-news h2 {
+    margin-bottom: 15px; /* Space below the Latest News heading */
+}
+
+.photo-gallery {
+    text-align: center; /* Center the title and controls */
+    padding: 20px; /* Add some padding around the content */
+    max-width: 1200px; /* Set a maximum width for the gallery */
+    margin: 0 auto; /* Center it horizontally */
+}
+
+
+.gallery-controls {
+    margin-bottom: 20px; /* Space between buttons and gallery */
+}
+
+.gallery-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin: 0 auto; /* Center the container in its parent */
+    max-width: 1200px; /* Set a maximum width for the gallery */
+}
+
+.photo {
+    margin: 10px; /* Space between photos */
+    max-width: 300px; /* Set a maximum width for each photo */
+    flex-grow: 1; /* Allow items to grow */
+}
+
+.photo img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: round the corners of images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body id="top">
+        <nav>
+            <ul>
+                <li><a href="bio.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="bio.html">About Me</a></li>
+                <li><a href="bio.html">Hobbies</a></li>
+                <li><a href="interests_gallery.html">Interests</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-container">
+            <div class="hamburger-icon" id="hamburger">
+                &#9776;
+            </div>
+
+            <div class="settings-menu">
+                <button id="themeButton">Toggle Dark Mode</button>
+            </div> 
+        </div>
+       
+        <h1>My Interests</h1>
+        
+        <!-- Interests Section -->
+        <div id="interests">
+            <h2>Interests:</h2>    
+            <p>Folktales, in general, are my favorite books to read. They often carry profound messages and reflections on human nature, passed down through generations. The storytelling traditions embedded in these tales provide a window into different cultures and their values. One of my current fascinations is with Japanese folklore, particularly the yokai. These mythical creatures and spirits from Japanese tradition are captivating due to their rich and varied lore. Each yokai has its own unique story and characteristics, which makes exploring them a deeply intriguing experience.</p>
+            <p>Music theory is another area that interests me. Understanding the principles behind music composition enhances my appreciation of various musical styles and helps me connect with the emotional depth of different pieces. I really enjoy exploring various scores from movies, anime, and videogames. Some of my favorite composers are:
+                <a href="https://www.hans-zimmer.com" target="_blank">Hans Zimmer</a>, 
+    <a href="https://www.kpenkmusic.com" target="_blank">Kevin Penkin</a>, 
+    and 
+    <a href="https://www.imdb.com/name/nm5485251/" target="_blank">Yu Peng Chen</a>. 
+    Music theory offers me endless avenues for exploration and enjoyment.
+    </p>
+            <p>Baking, my third interest, is a creative outlet that combines science and art. Is what I would say, but the truth is that I just love sweet treats. Baking also allows me to express my creativity and share delightful treats with friends and family.</p>
+        </div>
+
+
+        <!-- Books Section -->
+<div id="books-section">
+    <h2>Books</h2>
+        <div id="image">
+            <!-- Carousel for the Books -->
+            <div id="book-carousel" class="carousel">
+                <button class="carousel-button prev" onclick="prevSlide('book-carousel')">&#10094;</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="https://m.media-amazon.com/images/I/61ELtqN1LcL._AC_UF1000,1000_QL80_.jpg" alt="The Book of Yokai">
+                        <img src="https://pictures.abebooks.com/isbn/9781435120235-us.jpg" alt="Japanese Ghost Stories" class="preview">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/WW_Jacobs--The_lady_of_the_barge.djvu/page1-1200px-WW_Jacobs--The_lady_of_the_barge.djvu.jpg" alt="The Lady of the Barge" class="preview">
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="nextSlide('book-carousel')">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Music Section -->
+<div id="music-section">
+    <h2>Music</h2>  
+    <div id="music-carousel" class="carousel">
+        <button class="carousel-button prev" onclick="prevSlide('music-carousel')">&#10094;</button>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="album">
+                    <img src="https://f4.bcbits.com/img/a0323736272_65" alt="White Lighter Album">
+                    <div class="album-overlay">
+                        <div class="overlay-content">
+                            <p>White Lighter</p>
+                            <p>Typhoon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png" alt="Ok Computer Album" class="preview">
+                    <div class="album-overlay">
+                        <div class="overlay-content">
+                            <p>Ok Computer</p>
+                            <p>Radiohead</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/TheMillionMasksofGod2021.jpg" alt="The Million Masks of God Album" class="preview">
+                    <div class="album-overlay">
+                        <div class="overlay-content">
+                            <p>The Million Masks of God</p>
+                            <p>Manchester Orchestra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Muse_-_Absolution_Cover_UK.jpg" alt="Absolution Album" class="preview">
+                    <div class="album-overlay">
+                        <div class="overlay-content">
+                            <p>Absolution</p>
+                            <p>Muse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2738d93ebd1f2a7e0a707c14aa0" alt="GRAPHIX Album" class="preview">
+                    <div class="album-overlay">
+                        <div class="overlay-content">
+                            <p>GRAPHIX</p>
+                            <p>Hachioji P</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button next" onclick="nextSlide('music-carousel')">&#10095;</button>
+    </div>
+</div>
+
+
+        <!-- Baking Section -->
+<div id="baking-section">
+    <h2>Baking</h2>
+        <div id="image">
+            <!-- Baking Carousel -->
+            <div id="baking-carousel" class="carousel">
+                <button class="carousel-button prev" onclick="prevSlide('baking-carousel')">&#10094;</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="https://media.istockphoto.com/id/1125389587/photo/delicious-homemade-sourdough-rye-bread-on-a-plate-and-milk-homemade-baking.jpg?s=612x612&w=0&k=20&c=ThZ83o27RP3MZX1Lrd2bNNsWBu-vahAfc0GCTCd9ydI=" alt="Sourdough Bread">
+                        <img src="https://iowagirleats.com/wp-content/uploads/2022/11/Gluten-Free-Chocolate-Chip-Cookies-iowagirleats-Featured.jpg" alt="Cookies" class="preview">
+                        <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg" alt="Cake" class="preview">
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="nextSlide('baking-carousel')">&#10095;</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script> <!-- Link to existing JavaScript file for carousel functionality -->
+        <script src="music_section.js"></script> <!-- For the page with the music section -->
+    </body>
+</html>
